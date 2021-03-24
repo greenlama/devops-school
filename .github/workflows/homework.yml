@@ -1,0 +1,25 @@
+name: Simple Workflow
+
+on:
+    workflow_dispatch:
+    inputs:
+      sample-text:
+        description: sample test for test
+        required: true
+jobs:
+
+    TIMESTAMP:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - name: 1. Copy bash script
+          run: |
+            cp ./scripts/homework.sh ./.github/actions/homework/homework.sh
+        - name: 2. RUN SCRIPT
+          uses: ./.github/actions/homework
+#        - name: 1.3 DOWNLOAD ARTIFACT
+#          uses: actions/upload-artifact@v2
+#          with:
+#              name: log.md
+#              path: /home/runner/work/devops-school/devops-school/log.md
