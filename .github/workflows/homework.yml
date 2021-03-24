@@ -4,7 +4,7 @@ on:
     workflow_dispatch:
       inputs:
         sample-text:
-          description: sample test for test
+          description: 'Sample test for test'
           required: true
 jobs:
 
