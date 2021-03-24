@@ -1,4 +1,4 @@
-name: Simple Workflow
+name: Homework
 
 on:
     workflow_dispatch:
