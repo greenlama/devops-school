@@ -18,6 +18,8 @@ jobs:
             cp ./scripts/homework.sh ./.github/actions/homework/homework.sh
         - name: 2. RUN SCRIPT
           uses: ./.github/actions/homework
+          with:
+            sample-text: ${{ github.event.inputs.sample-text }}
 #        - name: 1.3 DOWNLOAD ARTIFACT
 #          uses: actions/upload-artifact@v2
 #          with:
