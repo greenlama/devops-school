@@ -1,7 +1,12 @@
 name: 'Test'
 
+inputs:
+  sample-text:
+    description: 'Text from inpul form'
+    required: true
+
 runs:
     using: 'docker'
     image: 'Dockerfile'
     args:
-      - $sample-text
+      - ${{ inputs.sample-text }}
