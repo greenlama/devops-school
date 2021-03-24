@@ -2,10 +2,10 @@ name: Simple Workflow
 
 on:
     workflow_dispatch:
-    inputs:
-      sample-text:
-        description: sample test for test
-        required: true
+      inputs:
+        sample-text:
+          description: sample test for test
+          required: true
 jobs:
 
     TIMESTAMP:
