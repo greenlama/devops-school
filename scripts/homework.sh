@@ -1,3 +1,3 @@
 #!/bin/sh
-echo $(sample-text)
-echo $(sample-text) >> sample-text.txt
+echo $1
+echo $1 >> sample-text.txt
