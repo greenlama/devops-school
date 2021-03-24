@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo ${{ github.event.inputs.sample-text }}
+echo $sample-text
